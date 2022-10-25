@@ -1,0 +1,394 @@
+/* 
+padding between content & border 
+margin defines space outside border 
+*/
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 95vw;
+    margin: auto;
+    text-align: justify;
+    font-family: Garamond, "Times New Roman", serif;
+    font-size: 1.2em
+}
+
+section {
+    border-bottom:3px solid cornflowerblue;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+
+header {
+    margin: auto;
+    background-color: cornflowerblue;
+    box-sizing: border-box;
+}
+
+footer {
+	background-color: cornflowerblue; 
+}
+
+footer a, footer p{
+    margin: auto;
+    text-align: center;
+    color: white; 
+    font-size: small;
+}
+
+footer a {
+	padding: 20px 20px 0px 20px;
+}
+
+footer p {
+	padding: 20px;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: inherit;
+}
+
+.section-header {
+    background-color: rgba(100, 149, 237, 0.3);
+    padding: 10px;
+    border-radius: 5px;    
+}
+
+.section-content {
+    padding-left: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 6vw;
+    float: right;
+    margin-right: 10px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px black;
+}
+
+.header-image {
+    float: left;
+    margin: 10px 0 10px 10px;
+}
+
+a {
+    text-decoration: none;
+    cursor:pointer;
+    color: black;
+}
+
+a:hover {
+    color: tomato;
+    text-decoration: underline;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+h2,h3{
+    color: black;
+    text-transform: uppercase;
+}
+
+.header-nav ul {
+    background-color: lightgray;   
+    padding: 0;
+    overflow: hidden; 
+}
+
+nav li {
+    float: left;
+    text-align: center;
+}
+
+.header-nav li {
+    border:1px solid black;
+    width: 20%;
+}
+
+.header-nav li:hover {
+    background-color: tomato;
+}
+
+nav li a {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.nav-links {
+	text-align: center;
+	width: 100%;
+}
+
+.header-nav li a {
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 14px 16px;
+}
+
+.header-nav a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+    color: tomato;
+}
+
+.resume-topic {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row {
+    display: inline-block;
+}
+
+.row > p {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills-list > li, .projects-list > li, .contact-list > li, .jobs-details li {
+    list-style-type: disc;
+    margin-left:
+     40px;
+    padding-top: 10px;
+}
+
+li:first-child {
+    padding-top: 0;
+}
+
+.skills-list {
+    float: left;
+}
+
+.skills-section {
+    display: inline-block;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.skills-section:first-child {
+    margin-left: 10px;
+}
+
+.skills-section li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.badge {
+    width: 10vw;
+}
+
+.project-details {
+    padding-top: 10px;
+}
+
+.title {
+    padding-bottom: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.title:first-child {
+    margin-top: 20px;
+}
+
+.view-link {
+    margin-top: 30px;
+}
+
+form {
+    margin-left: 10px;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.form-details {
+    padding: 20px 20px 20px 10px;
+}
+
+#view-employee {
+	float: left;
+}
+
+.label {
+    margin-top: 10px;
+}
+
+textarea, .stretch-input > input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    float: right;
+}
+
+.button {
+    margin-right: 100px;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+.button:last-child {
+    margin-right: 20px;
+}
+
+.cards {
+    padding: 0 30px;
+    margin-top: 30px;
+    float: left;
+}
+
+.card {
+    width: 30%;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.card:first-child {
+    margin-left: 0;
+}
+
+.card:last-child {
+    margin-right: 0;
+}
+
+.card-header, .card-footer {
+    background-color: rgba(100, 149, 237, 0.5);
+    padding: 5px;
+    
+}
+
+.card-header {
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    padding: 20px 10px;
+}
+
+.topics {
+    font-style: italic;
+}
+
+.demo-video {
+	width: 750px;
+}
+
+table {
+	width: 100%;
+}
+
+.table {
+	margin: 30px;
+	padding: 10px;
+	height: 500px;
+	overflow: auto;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	border: 2px solid cornflowerblue;
+}
+
+th, td {
+	padding: 10px;
+}
+
+.actions {
+	padding: 0px;
+}
+
+.history-table {
+	width: 75%;
+	margin: 0;
+	margin-top: 30px;
+}
+
+input[readonly] {
+	background-color: #DEDEDE;
+}
+
+.btn {
+	padding: 10px; 
+	background-color: #DEDEDE;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: tomato;
+	color: black;
+	text-decoration: none;
+}
+
+.btn-group {
+	margin-top: 30px;
+	padding: 5px;	
+	float: left;
+}
+
+.success-table {
+	height: auto;
+}
+
+.increase-top-spacing {
+	margin-top: 30px;
+}
+
+.increase-left-spacing {
+	margin-left: 30px;
+}
+
+.underline {
+	text-decoration:underline; 
+}
+
+.clear-float {
+    clear: both;
+}
+
+.display-none {
+    display: none;
+}
+
+.hidden-visibility {
+    visibility: hidden;
+}
+
+.error {
+	color: red;
+	font-style: italic;
+}
+
+.center-text {
+	text-align: center;
+}
